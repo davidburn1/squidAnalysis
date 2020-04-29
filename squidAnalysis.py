@@ -33,7 +33,7 @@ Map 07,Map 08,Map 09,Map 10,Map 11,Map 12,Map 13,Map 14,Map 15,Map 16
 
 
 names = ['comment', 'time', 'temperature', 'field', 'moment', 'moment_stderr', 'transport_action', 'averaging_time', 'frequency', 'peak_amplitude',
-'center_position', 'lockin_signal_y' 'lockin_signal_x', 'range', 'm_quad_signal', 'ac_moment', 'ac_moment_stderr', 'ac_phase', 'ac_phase_stderr', 'ac_susceptibility',
+'center_position', 'lockin_signal_y', 'lockin_signal_x', 'range', 'm_quad_signal', 'ac_moment', 'ac_moment_stderr', 'ac_phase', 'ac_phase_stderr', 'ac_susceptibility',
 'ac_susceptibility_stderr', "ac_dX", "ac_dX_stderr", "ac_d2X", "ac_d2X_stderr", 'ac_drive', 'ac_frequency',	'ac_averaging_time', 'ac_cycles', 'ac_range',
 'ac_measure_type', "ac_signal'", "ac_signal''", 'ac_trim_coil_ratio', 'ac_trim_coil_phase', 'min_temperature', 'max_temperature', 'min_field', 'max_field', 'mass',
 'motor_lag', 'pressure', 'measure_count', 'measurement_number', 'SQUID_status', 'motor_status', 'measure_status', 'motor_current', 'motor_remp', 'temp_status',
@@ -58,9 +58,9 @@ def loadSquidData(filename):
     data["ac_d2X"] = data["ac_d2X"] * 10.0 # convert emu/Oe to emu/mT
     data["ac_d2X_stderr"] = data["ac_d2X_stderr"] * 10.0 # convert emu/Oe to emu/mT
     
-    data['ac_susceptibility'] = data['ac_susceptibility'] * 10.0 # convert emu/Oe to emu/mT
-    data['ac_susceptibility'] = data['ac_susceptibility'] * 10.0 # convert emu/Oe to emu/mT
-    data['ac_susceptibility'] = data['ac_susceptibility'] * 10.0 # convert emu/Oe to emu/mT
+    #data['ac_susceptibility'] = data['ac_susceptibility'] * 10.0 # convert emu/Oe to emu/mT
+    #data['ac_susceptibility'] = data['ac_susceptibility'] * 10.0 # convert emu/Oe to emu/mT
+    #data['ac_susceptibility'] = data['ac_susceptibility'] * 10.0 # convert emu/Oe to emu/mT
     
     return data
 
